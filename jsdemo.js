@@ -1,8 +1,8 @@
 console.log("This is loaded from the external js");
 alert("This is an alert!");
-var name = "Troy Kimbrough";
-var school = "Cox Mill High School";
-let hobby = "Playing Football"; 
+var name = prompt("What is your name?");
+var school = prompt("What school do you go to?");
+let hobby = prompt("What do you like to do?"); 
 console.log(`Name: ${name}`);
 console.log(`School: ${school}`);
 console.log(`Hobby: ${hobby}`);
