@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Music Chart</title>
+      <style>
+      body{
+        background-color:#b00600;
+      }
+    </style>
+      <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <center>
+      <h1>My Favorite Alex Jean Songs</h1>
+      <div id="plot"></div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/2spfhkuiUPQ?si=4v6Pq9UdsBN15ryn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ma-BQCMpURo?si=THthcovTZl5oGTCz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4HPbSP5sdaw?si=ANuWd2OWtIyVDS6f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p><a href="index.html">Return to the homepage</a></p>
+      <hr>
+      <p>&copy; STEM Prep 2026</p>
+    </center>
+    <script>
+      var songs=["I Need Faith", "Stand Firm, You'll Win", "NY Knicks"];
+      var views=[2082621,3860784,299337];
+      var trace={
+        x:songs,
+        y:views,
+        type:"bar"
+      };
+      var data=[trace];
+      var layout={title:"My Favorite Alex Jeaan Songs"};
+      Plotly.newPlot("plot",data,layout);
+    </script>
+  </body>
+</html>
